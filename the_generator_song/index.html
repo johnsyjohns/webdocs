@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>the generator song</title>
+    <style>
+
+    * {
+            box-sizing: border-box;
+          }
+
+          body {
+            /*background-image: url("background.jpg");*/
+            /* Full height */
+            background-image:url("img/background.png");
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+
+          /* Grid basic concepts:
+          https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout */
+          .grid-container {
+            display: grid;
+            position: absolute;
+            left: 0; top:0;
+            min-height: 100vh;
+            min-width: 100vw;
+            grid-template-columns: auto auto auto; /* 3 column gird */
+            grid-template-rows: auto auto auto;
+            background-image:url("img/background.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*background-image: url("whiteHouse.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;*/
+        }
+          /* this is just to see the sound boxes */
+
+        </style>
+      </head>
+      <body>
+        <!--<div id="main">
+          <img src="trump.jpg">
+        use onclick instead of onmouseover =-->
+
+          <div class="grid-container">
+            <div class="gridSnd" onmouseover="playSound('generator_birds')"
+              onmouseout="stopSound('generator_birds')"></div>
+            <audio id='generator_birds' src="audio/generator_birds.mp3"></audio>
+
+            <div class="gridSnd" onmouseover="playSound('lowhum')"
+              onmouseout="stopSound('lowhum')"></div>
+            <audio id='lowhum' src="audio/lowhum.mp3"></audio>
+
+            <div class="gridSnd" onmouseover="playSound('generatorhum')"
+              onmouseout="stopSound('generatorhum')"></div>
+            <audio id='generatorhum' src="audio/generatorhum.mp3"></audio>
+
+            <div class="gridSnd" onmouseover="playSound('lowgenerator_birds')"
+              onmouseout="stopSound('lowgenerator_birds')"></div>
+            <audio id='lowgenerator_birds' src="audio/lowgenerator_birds.mp3"></audio>
+
+            <div class="gridSnd" onmouseover="playSound('insects_birds_generator')"
+              onmouseout="stopSound('insects_birds_generator')"></div>
+            <audio id='insects_birds_generator' src="audio/insects_birds_generator.mp3"></audio>
+
+            <div class="gridSnd" onmouseover="playSound('construction_birds')"
+              onmouseout="stopSound('construction_birds')"></div>
+            <audio id='construction_birds' src="audio/construction_birds.mp3"></audio>
+
+            <div class="gridSnd" onmouseover="playSound('rainstatic_crescendo')"
+              onmouseout="stopSound('rainstatic_crescendo')"></div>
+            <audio id='rainstatic_crescendo' src="audio/rainstatic_crescendo.mp3"></audio>
+
+            <div class="gridSnd" onmouseover="playSound('birds_car')"
+              onmouseout="stopSound('birds_car')"></div>
+            <audio id='birds_car' src="audio/birds_car.mp3"></audio>
+
+            <div class="gridSnd" onmouseover="playSound('softchirp_construction')"
+              onmouseout="stopSound('softchirp_construction')"></div>
+            <audio id='softchirp_construction' src="audio/softchirp_construction.mp3"></audio>
+          </div>
+        <!--</div>-->
+
+        <script>
+        // https://www.w3schools.com/jsref/met_audio_play.asp
+        function playSound(soundobj) {
+          var thissound=document.getElementById(soundobj);
+          thissound.play();
+        }
+       // turn off this function to let the sound continue
+        function stopSound(soundobj) {
+          var thissound=document.getElementById(soundobj);
+          thissound.pause();
+        }
+      </script>
+      </body>
+    </html>
