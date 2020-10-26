@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>clubhouse</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="clubhouse">
+    <meta name="author" content="Johnsy">
+    <link rel="stylesheet" href="clubhouse.css">
+
+
+  <style>
+
+  * {
+          box-sizing: border-box;
+        }
+
+        body {
+          /*background-image: url("background.jpg");*/
+          /* Full height */
+          background-image:url("img/bkimg.png");
+          height: 100%;
+          width: 100%;
+          /* Center and scale the image nicely */
+          background-position: left;
+          background-repeat: no-repeat;
+          background-size: cover;
+          z-index: 1;
+        }
+    </style>
+  </head>
+
+<body>
+
+  <body>
+    <div id="container">
+    <!-- "get" is used when there is no sensitive information as it is visible in the url
+    "get" is for small amounts of data and is the default method.
+    "post" may include sensitive information as it's not visible in the url -->
+    <form method="post" action="htmlFormOutput.php" id="formContainer" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      <fieldset> <!--Used to logically group sections of a form-->
+        <legend>To reserve the court, please fill out the following</legend> <!--Used to add captions to a fieldset-->
+        <ol>
+          <li>
+        <label for="Yourlocation">Where are you?<em>*</em>
+        <input type="text" placeholder="Who was here before you?" name="Yourlocation" size="25" maxlength="200" autofucus required>
+      </label>
+      </li>
+      <li>
+        <label for="Occupation">How do you financially support yourself?<em>*</em>
+        <input type="text" placeholder="Do you have access to basic human rights?" name="Occupation" size="25" maxlength="200" required></label>
+      </li>
+      <li>
+        <label for="Covid">How have you been impacted by COVID-19?<em>*</em>
+        <input type="text" placeholder="Do you have a safety net?" name="Covid" size="25" maxlength="200" required></label>
+      </li>
+      <li>
+        <label for="Housing">Have you ever taken your landlord to court and won?<em>*</em>
+        <input placeholder="What do you think when you hear the word EVICTION?" type="text" name="Housing" maxlength="200" required></label>
+      </li>
+      </ol>
+      </fieldset>
+
+      <fieldset>
+        <legend>Reservation:</legend>
+        <input name="Time" type="Time" size="30">
+      </fieldset>
+
+      <p>
+        <input type="submit" value="Send It!" name="submit" />
+        <input type="reset" name="reset" />
+      </p>
+    </form>
+
+    </div>
+<!--
+    <div>
+    <a href="#" class="previous round">&#8249;</a>
+    <a href="#" class="next round">&#8250;</a>
+  </div> -->
+
+  </body>
+</html>
