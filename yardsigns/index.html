@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>suburbika</title>
+  <!-- https://www.w3schools.com/jsref/prop_style_animationname.asp -->
+<style>
+
+#teach {
+  top: 50%;
+  position: absolute;
+  -webkit-animation: linear infinite alternate;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 20s;
+}
+@-webkit-keyframes run {
+    0% { left: 0;}
+    50%{ left : 100%;}
+    100%{ left: 0;}
+}
+
+
+#tru {
+  top: 75%;
+  position: absolute;
+  -webkit-animation: linear infinite alternate;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 50s;
+}
+@-webkit-keyframes run {
+    0% { left: 0;}
+    50%{ left : 100%;}
+    100%{ left: 0;}
+}
+
+</style>
+</head>
+<body>
+
+<div id="bkimg">
+  <img src="img/bkimg.png" alt="yard">
+</div>
+
+<div id="teach">
+  <img src="img/my_teacher.png" alt="yard sign">
+</div>
+
+<div id="tru">
+  <img src="img/tru_green.png" alt="yard sign">
+</div>
+
+
+
+
+</body>
+</html>
