@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>suburbika</title>
+  <!-- https://www.w3schools.com/jsref/prop_style_animationname.asp -->
+<style>
+
+#ground_container {
+  position:absolute;
+}
+
+#sidewalk_container {
+  position: absolute;
+}
+
+#tree1_container {
+  position:absolute;
+}
+
+#trees2_container {
+  position:absolute;
+}
+
+#shadow_container {
+  position:absolute;
+}
+
+#sign_container {
+  position:absolute;
+}
+
+#dogwastestation_container {
+  position:absolute;
+}
+
+.ground {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: linear infinite alternate;
+  -webkit-animation-name: grass;
+  -webkit-animation-duration: 30s;
+}
+
+@-webkit-keyframes grass {
+    0% { opacity: 0%;}
+    50%{ opacity: 20%;}
+    100%{ opacity: 100%;}
+}
+
+.sidewalk {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: linear infinite alternate;
+  -webkit-animation-name: concrete;
+  -webkit-animation-duration: 50s;
+}
+
+@-webkit-keyframes concrete {
+    0% { opacity: 0%;}
+    50%{ opacity: 20%;}
+    100%{ opacity: 100%;}
+}
+
+.tree1 {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: linear infinite alternate;
+  -webkit-animation-name: bigtree;
+  -webkit-animation-duration: 20s;
+}
+
+@-webkit-keyframes bigtree {
+    0% { opacity: 0%;}
+    50%{ opacity: 20%;}
+    100%{ opacity: 100%;}
+}
+
+
+.trees2 {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: linear infinite alternate;
+  -webkit-animation-name: smalltree;
+  -webkit-animation-duration: 40s;
+}
+
+@-webkit-keyframes smalltree {
+    0% { opacity: 0%;}
+    50%{ opacity: 10%;}
+    100%{ opacity: 90%;}
+
+}
+
+.shadow {
+  width: 100%;
+  height: 100%;
+}
+
+.sign {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: linear infinite;
+  -webkit-animation-name: burial;
+  -webkit-animation-duration: 60s;
+}
+
+@-webkit-keyframes burial {
+    0% { opacity: 0%;}
+    50%{ opacity: 0%;}
+    75%{ opacity: 0%;}
+    78%{ opacity: 100%;}
+    99% { opacity: 100%;}
+    100% { opacity: 0%;}
+}
+
+.dogwastestation {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: linear infinite alternate;
+  -webkit-animation-name: poop;
+  -webkit-animation-duration: 60s;
+}
+
+@-webkit-keyframes poop {
+    0% { opacity: 0%;}
+    50%{ opacity: 10%;}
+    100%{ opacity: 90%;}
+}
+
+/*div.ground {
+  content:url("img/mailbox_ground.png");
+  width: 100%;
+  height: 100%;
+}
+
+div.mailbox1 {
+  content:url("img/mailbox_1.png");
+  width: 100%;
+  height: 100%;
+}
+
+div.mailbox2 {
+  content:url("img/mailbox_2.png");
+  width: 100%;
+  height: 100%;
+}
+
+div.mailbox3 {
+  content:url("img/mailbox_3.png");
+  width: 100%;
+  height: 100%;
+}*/
+
+</style>
+</head>
+<body>
+
+<div id="ground_container">
+  <img src="img/grass.png" class="ground" alt="grass">
+</div>
+
+<div id="sidewalk_container">
+  <img src="img/sidewalk.png" class="sidewalk" alt="sidewalk">
+</div>
+
+<div id="tree1_container">
+  <img src="img/tree1.png" class="tree1" alt="trees">
+</div>
+
+<div id="trees2_container">
+  <img src="img/trees2.png" class="trees2" alt="trees">
+</div>
+
+<div id="shadow_container">
+  <img src="img/shadow.png" class="shadow" alt="trees shadow">
+</div>
+
+<div id="sign_container">
+  <img src="img/sign.png" class="sign" alt="Native American Burial Mound sign">
+</div>
+
+<div id="dogwastestation_container">
+  <img src="img/dogwastestation.png" class="dogwastestation" alt="dog waste station">
+</div>
+
+</body>
+</html>
