@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.notice {
+  width: 90vw;
+  height: 60vh;
+  margin-top: 2vh;
+  margin-left: 10vw;
+  margin-right: 1vw;
+  background-image: url('img/sky.png');
+  opacity: 90%;
+  border: 1px solid white;
+  position:absolute;
+  text-align: right;
+  z-index: 10;
+
+}
+
+h2 {
+  margin: 5vh  5vh ;
+  font-size: 3em;
+  font-family:cursive;
+  color: white;
+}
+
+#bkimg {
+  width: 100vw;
+  height: 100vh;
+  position:absolute;
+  z-index: 30;
+}
+
+</style>
+</head>
+<body>
+
+
+  <div class="notice">
+    <h2>we're sorry,</h2>
+    <h2>the court is already reserved at</h2>
+    <h2 id="time"></h2>
+
+    <script>
+    var d = new Date();
+    document.getElementById("time").innerHTML = d;
+    </script>
+  </div>
+
+  <div id="bkimg">
+    <img src="img/courts.png" alt="tennis court">
+  </div>
+
+
+
+</body>
+</html>
