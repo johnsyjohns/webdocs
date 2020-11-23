@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Scroll JS Examples</title>
+    <!--
+    There are many scrolling js libraries, here are a few popular ones:
+    http://scrollmagic.io/
+    https://michalsnik.github.io/aos/
+    The example below uses AOS
+    -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+
+    #bkimg {
+      z-index: -10;
+    }
+
+    .box1 {
+      width: 90vw;
+      height: 90vh;
+      position: absolute;
+      top: 1000px;
+      background-image: url('img/tru_green.png');
+      background-color: rgba(255,255,255,0);
+      /*border: 1px solid black;*/
+      z-index: 50;
+    }
+
+    .box2 {
+      width: 90vw;
+      height: 90vh;
+      position: absolute;
+      top: 2000px;
+      background-image: url('img/my_teacher.png');
+      background-color: rgba(255,255,255,0);
+      /*border: 1px solid black;*/
+      z-index: 10;
+    }
+
+    .box3 {
+      width: 90vw;
+      height: 90vh;
+      top: 3000px;
+      position:absolute;
+      background-image: url('img/hero.png');
+      background-color: rgba(255,255,255,0);
+      /*border: 1px solid black;*/
+      z-index: 50;
+    }
+
+    .box4 {
+      width: 90vw;
+      height: 90vh;
+      top: 4000px;
+      position: absolute;
+      background-image: url('img/go_green.png');
+      background-color: rgba(255,255,255,0);
+      /*border: 1px solid black;*/
+      z-index: 50;
+    }
+
+    .box5 {
+      width: 90vw;
+      height: 90vh;
+      top: 5000px;
+      position: absolute;
+      background-image: url('img/forsale.png');
+      background-color: rgba(255,255,255,0);
+      /*border: 1px solid black;*/
+      z-index: 50;
+    }
+
+
+    </style>
+
+  </head>
+  <body>
+
+    <audio id="myaudio" controls autoplay>
+      <source src="audio/myaudio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element. </audio>
+
+
+    <div id="bkimg">
+      <img src="img/bkimg.png" alt="yard">
+    </div>
+
+    <div class="box1" data-aos="slide-left">
+    </div>
+
+    <div class="box2" data-aos="slide-right">
+    </div>
+
+    <div class="box3" data-aos="slide-left">
+    </div>
+
+    <div class="box4" data-aos="slide-right">
+    </div>
+
+    <div class="box5" data-aos="slide-left">
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myaudio");
+  x.autoplay = true;
+  x.load();}
+</script>
+
+  </body>
+</html>
